@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Note from "./Note";
+import MyNote from "./Note";
 import CreateArea from "./CreateArea";
 
 function App() {
-  const [notes, setNotes] = useState([]);
+  const [Notes, setNotes] = useState([]);
 
   function addNote(newNote) {
     setNotes((prevNotes) => {
@@ -27,7 +27,7 @@ function App() {
       <CreateArea onAdd={addNote} />
       {notes.map((noteItem, index) => {
         return (
-          <Note
+          <MyNote
             key={index}
             id={index}
             title={noteItem.title}

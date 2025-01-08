@@ -1,6 +1,6 @@
 import React from "react";
 
-function Note(props) {
+function MyNote(props) {
   function handleClick() {
     props.onDelete(props.id);
   }
@@ -14,4 +14,4 @@ function Note(props) {
   );
 }
 
-export default Note;
+export default MyNote;
